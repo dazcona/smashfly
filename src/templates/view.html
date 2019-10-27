@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+
+    <h1 class="page-header"> {{ image.first }} {{ image.last }} </h1>
+
+    <div class="row" style="margin-left: 5px;">
+            <div class="col-4" style="width: 40%; float: left !important;">
+                    <img src="{{ url_for('static', filename = image.path) }}" class="ungender" />
+            </div>
+            <div class="col-4" style="width: 20%; float: left !important;">
+                    <span style='font-size:20px;'>CV image converted to ungender</span></br>
+                    <span style='font-size:200px;'>&#8680;</span>
+            </div>
+            <div class="col-4" style="width: 40%; float: left !important;">
+                    <img src="{{ url_for('static', filename = image.transformed_path) }}" class="ungender" style="margin-left: 10px;" />
+            </div>
+        </div>
+
+    <hr/>
+
+    <pre id="container-text-2" class="code2" style="width: 100% !important;"></pre>
+
+    <script>
+        
+        var censured = [
+            "David", "Azcona", "Carmen", "Perez",
+            "david.azcona2@mail.dcu.ie", "carmen.perez@gmail.com",
+            "Dublin", "(DCU)", "Arizona", 
+            "(ASU)", "Navarre", "(UPNA)", "DCU", "DCU's", "Ireland", "Dublin", "Brussels", 
+            "Spain", "Irish", "Arizona", "ASU" ]
+
+        var path = "{{ url_for('static', filename = image.cv_static_path) }}";
+
+        $.get(path, function(data) {
+            
+            var sentence = data.split("\n")
+             for (let index = 0; index < sentence.length; index++) {
+                var para = document.createElement("P");
+                para.classList.add("font-size")
+                var splitSentence = sentence[index].split(" ")
+                for (let index = 0; index < splitSentence.length; index++) {
+                    var word = document.createElement("span");
+                    var t = document.createTextNode(splitSentence[index] + " ");
+                    if (censured.indexOf(splitSentence[index]) > -1) {
+                        word.classList.add("blurry-text")
+                    }
+                    word.appendChild(t); 
+                    para.appendChild(word);
+                }
+                document.getElementById("container-text-2").appendChild(para);   
+             }
+        }, 'text');
+    </script>
+
+{% endblock %}

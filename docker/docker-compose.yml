@@ -1,0 +1,30 @@
+version: '2.3'
+
+services:
+
+  sf_container:
+    image: sf_image
+    container_name: sf_container
+    working_dir: /code
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+
+# Setup environment variables:
+    environment:
+      - PYTHONPATH=/code
+      
+# Setup the ports you want to expose:
+    ports:
+      # Jupyter port
+      - "8888:8888"
+      - "5000:5000"
+
+# Setup the volumes you want to share:
+    volumes:
+      - ../:/code
+
+# Uncomment the following line to use an NVIDIA GPU (requires nvidia-docker)
+    # runtime: nvidia
+
+    command: jupyter notebook --allow-root --ip=0.0.0.0

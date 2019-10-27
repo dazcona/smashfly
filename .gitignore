@@ -1,0 +1,11 @@
+*.DS_Store
+*.pyc
+**/logs	
+**/.ipynb_checkpoints
+**/__pycache__
+**/env/
+**/.vscode/
+data/*
+!data/.gitkeep
+src/static/uploads/*
+!src/static/uploads/.gitkeep

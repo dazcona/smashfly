@@ -1,0 +1,170 @@
+David Azcona Data Scientist & Researcher
+Data Scientist with an interest in applied Machine Learning & AI for social good
+Email: david.azcona2@mail.dcu.ie
+Phone number: +34 650 83 27 70
+
+EDUCATION
+2015 – 2019, PhD in Artificial Intelligence, Dublin City University (DCU)
+2017 – 2018, Fulbright Visiting Researcher, Arizona State University (ASU)
+2013 – 2015, MSc in Data Analytics, Dublin City University (DCU), 1st. class honours (ranked 2nd)
+2007 – 2011, BSc in Computer Science, Public University of Navarre (UPNA), 1st. class honours
+
+WORK EXPERIENCE
+
+Postdoctoral Researcher
+
+Insight Centre for Data Analytics at DCU
+
+Collaborate with researchers, lecturers and industry
+
+partners to develop new Intellectual Property
+
+Authored top-ranked publications and media articles
+
+2014 – 2019
+
+Laboratory Assistant
+
+DCU's School of Computing
+
+Ireland
+
+Programming I in Python
+
+Object Oriented Design and Implementation in C++
+
+Data Structures and Algorithms in Java
+
+2012 – 2015
+
+Software Engineer
+
+IBM Dublin & Brussels
+
+Ireland
+
+Monitored, analyzed and reported issues on 200+ servers
+
+in 6+ environments daily
+
+Reduced the server shutdown time by 90%, which
+
+brought stability to production & improved performance
+
+2011 – 2012
+
+Software Developer
+
+Ingeteam
+
+Spain
+
+Developed wind power analytics platforms that were
+
+utilized by Vestas, Siemens Gamesa & Acciona
+
+CONCEPTS
+
+Artificial Intelligence
+
+Machine Learning
+
+Embeddings
+
+Data Mining
+
+Networks
+
+PROJECTS
+
+PredictCS: Personalizing Computer Science Education
+
+Machine Learning Predictive Analytics Models that identify
+
+students "at-risk" in Computer Science and personalize the way they
+
+learn the skills by sending material and code solutions
+
+Technologies: Python, Pandas, Numpy, Scikit-learn, Keras, Docker
+
+Achieved student engagement with the recommendations which
+
+improved their performance between 4% and 9%
+
+Published and presented at top conferences in Educational Data
+
+Mining such as LAK, EDM, AIED; and journals including IEEE TLT
+
+Prometheus: Deep Learning Fire Detector
+
+Combination of auto-piloted drones & Computer Vision to detect
+
+wildfires while they are still in their early stages
+
+Trained a Deep Neural Network using transfer learning
+
+technologies & AlexNet, CUDA, Microsoft CNTK & Azure, Docker
+
+Partnered with Arizona State University & Arizona Fire Department
+
+Microsoft Imagine Cup Awards: USA 1st. place in Artificial
+
+Intelligence & 4th overall. World Finals: Top-6 in AI & Semifinalists
+
+Embeddings & Representation Learning on Irish
+
+Politics
+
+Trained a Neural Network with an Embeddings layer to learn
+
+representations of Irish Senators and Deputies based on their votes
+
+Authored an article featured on RTÉ Brainstorm (Irish media)
+
+Marketplace for Students & Researchers
+
+Information Retrieval software that matches students seeking on-
+
+campus jobs and researchers looking for annotators using Lucene
+
+DCU's Ryan Academy Accelerator Program awardee
+
+FinTech: Trust Score for Students getting Loans
+
+Students' creditworthiness combining banking and social data
+
+Winners at Ulster Bank's FinTech Hackathon In Dogpatch Labs
+
+Huawei Celebrity Hunt: Deep Learning Face Recognizer
+
+Crawled the web for pictures, learned embeddings using CNN with
+
+CUDA and detected the celebrity using triplets & similarity learning
+
+Huawei's Vision Challenge in Ireland: 4th place and 2nd fastest
+
+Tensorflow & ImageNet Object Detection Android App
+
+Special Mention award at Startup Weekend in Google Ireland
+
+Coding volunteering at low-income schools in Arizona
+
+Led a group of grad students & was awarded funding by ASU
+
+INTERESTS
+
+Football
+
+Travelling
+
+Coaching
+
+Hackathons
+
+Tasks & Achievements
+
+Tutoring a variety of courses including:
+
+Tasks & Achievements
+
+Tasks & Achievements

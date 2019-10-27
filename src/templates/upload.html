@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6" style="width: 100%;">
+                <div class="login-panel panel panel-default">
+                        
+                    
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Upload your Resume:</h3>
+                    </div>
+
+                    <div class="panel-body">
+                            <!-- <h2>File Upload & Image Preview</h2>
+                            <p class="lead">No Plugins <b>Just Javascript</b></p>
+                             -->
+                            <!-- Upload  -->
+                            <!-- <form id="file-upload-form" class="uploader">
+                              <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+                            
+                              <label for="file-upload" id="file-drag">
+                                <img id="file-image" src="#" alt="Preview" class="hidden">
+                                <div id="start">
+                                  <i class="fa fa-download" aria-hidden="true"></i>
+                                  <div>Select a file or drag here</div>
+                                  <div id="notimage" class="hidden">Please select an image</div>
+                                  <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+                                </div>
+                                <div id="response" class="hidden">
+                                  <div id="messages"></div>
+                                  <progress class="progress" id="file-progress" value="0">
+                                    <span>0</span>%
+                                  </progress>
+                                </div>
+                              </label>
+                              <div id="pdf-main-container">
+                                    <div id="pdf-loader">Loading document ...</div>
+                                    <div id="pdf-contents">
+                                        <div id="pdf-meta">
+                                            <div id="pdf-buttons">
+                                                <button id="pdf-prev">Previous</button>
+                                                <button id="pdf-next">Next</button>
+                                            </div>
+                                            <div id="page-count-container">Page <div id="pdf-current-page"></div> of <div id="pdf-total-pages"></div></div>
+                                        </div>
+                                        <canvas id="pdf-canvas" width="400"></canvas>
+                                        <div id="page-loader">Loading page ...</div>
+                                    </div>
+                                </div>
+    
+                                <div>
+                                    <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+                                </div>
+                            </form> -->
+
+                        <form method="post" enctype="multipart/form-data">
+                            <div>
+                                <label for="capture">
+                                    <u>Click here & upload your CV</u>
+                                </label>
+                                <input id="capture" type="file" name="capture" accept=".pdf">
+                            </div>
+
+                            <div class="preview">
+                                <p> No file currently selected for upload </p>
+                            </div>
+                            
+                            <div id="pdf-main-container">
+                                <div id="pdf-loader">Loading document ...</div>
+                                <div id="pdf-contents">
+                                    <div id="pdf-meta">
+                                        <div id="pdf-buttons">
+                                            <button id="pdf-prev">Previous</button>
+                                            <button id="pdf-next">Next</button>
+                                        </div>
+                                        <div id="page-count-container">Page <div id="pdf-current-page"></div> of <div id="pdf-total-pages"></div></div>
+                                    </div>
+                                    <canvas id="pdf-canvas" width="400"></canvas>
+                                    <div id="page-loader">Loading page ...</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div id="container-text"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="{{ url_for('static', filename='js/upload2.js') }}"></script>
+        <!-- <script src="{{ url_for('static', filename='js/upload.js') }}"></script> -->
+
+    </div>
+
+{% endblock %}

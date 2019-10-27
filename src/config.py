@@ -1,0 +1,1 @@
+APP_KEY = 'This is secret!'
